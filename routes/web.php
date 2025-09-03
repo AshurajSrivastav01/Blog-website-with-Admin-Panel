@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.blog');
-});
+Route::view('/', 'frontend.blog', ['Title' => 'Home - Modern Blog']);
+
+
