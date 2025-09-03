@@ -11,8 +11,11 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    {{-- <link href="{{ asset('public/asset/css/home.css') }}" rel="stylesheet"> --}}
+    <!-- Custom CSS -->
     <link href="{{ asset('asset/css/home.css') }}" rel="stylesheet">
+    <link href="{{ asset('asset/css/about.css') }}" rel="stylesheet">
+    <link href="{{ asset('asset/css/blog.css') }}" rel="stylesheet">
+    <link href="{{ asset('asset/css/contact.css') }}" rel="stylesheet">
 </head>
 <body>
 
@@ -26,16 +29,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link active" href="{{ url('/') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Categories</a>
+                        <a class="nav-link" href="{{ url('/') }}">Categories</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="{{ url('/about') }}">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="{{ url('/') }}">Contact</a>
                     </li>
                 </ul>
                 <div class="search-container ms-3">
