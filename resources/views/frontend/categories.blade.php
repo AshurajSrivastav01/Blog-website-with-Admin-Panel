@@ -100,94 +100,6 @@
             </div>
         </section>
 
-        <!-- Featured Articles -->
-        <section class="featured-section">
-            <div class="container">
-                <div class="featured-header">
-                    <h2>Featured Articles</h2>
-                    <p class="lead">Discover our most popular content across all categories</p>
-                </div>
-
-                <div class="row">
-                    <!-- Article 1 -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="article-card animate-fadein">
-                            <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Article Image">
-                            <div class="article-content">
-                                <span class="badge bg-primary mb-2">Technology</span>
-                                <h5 class="card-title">The Future of AI in Everyday Life</h5>
-                                <p class="card-text">How artificial intelligence is transforming our daily routines and what to expect in the coming years.</p>
-                                <div class="article-meta">
-                                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1160&q=80" alt="Author" class="author-image">
-                                    <div>
-                                        <h6 class="mb-0">Sarah Johnson</h6>
-                                        <small class="text-muted">May 15, 2023</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#" class="stretched-link"></a>
-                        </div>
-                    </div>
-
-                    <!-- Article 2 -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="article-card animate-fadein">
-                            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1174&q=80" alt="Article Image">
-                            <div class="article-content">
-                                <span class="badge bg-success mb-2">Travel</span>
-                                <h5 class="card-title">10 Hidden Gems in Europe You Need to Visit</h5>
-                                <p class="card-text">Discover breathtaking locations off the beaten path that will make your European adventure unforgettable.</p>
-                                <div class="article-meta">
-                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Author" class="author-image">
-                                    <div>
-                                        <h6 class="mb-0">Michael Chen</h6>
-                                        <small class="text-muted">Apr 22, 2023</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#" class="stretched-link"></a>
-                        </div>
-                    </div>
-
-                    <!-- Article 3 -->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="article-card animate-fadein">
-                            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1153&q=80" alt="Article Image">
-                            <div class="article-content">
-                                <span class="badge bg-info mb-2">Health</span>
-                                <h5 class="card-title">Morning Routines of Highly Successful People</h5>
-                                <p class="card-text">Learn how starting your day with intention can dramatically improve your productivity and overall wellbeing.</p>
-                                <div class="article-meta">
-                                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" alt="Author" class="author-image">
-                                    <div>
-                                        <h6 class="mb-0">Priya Sharma</h6>
-                                        <small class="text-muted">May 5, 2023</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#" class="stretched-link"></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Newsletter Section -->
-        <section class="newsletter-section">
-            <div class="container position-relative">
-                <h2 class="mb-3">Stay Updated</h2>
-                <p class="lead mb-4">Subscribe to our newsletter and never miss an update from your favorite categories.</p>
-                <form class="row g-3 justify-content-center">
-                    <div class="col-md-6">
-                        <input type="email" class="form-control form-control-lg" placeholder="Your email address">
-                    </div>
-                    <div class="col-md-2">
-                        <button type="submit" class="btn btn-light btn-lg w-100">Subscribe</button>
-                    </div>
-                </form>
-            </div>
-        </section>
-
         <!-- Popular Tags -->
         <section class="tags-section">
             <div class="container">
@@ -212,6 +124,22 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="container position-relative">
+                <h2 class="mb-3">Stay Updated</h2>
+                <p class="lead mb-4">Subscribe to our newsletter and never miss an update from your favorite categories.</p>
+                <form class="row g-3 justify-content-center">
+                    <div class="col-md-6">
+                        <input type="email" class="form-control form-control-lg" placeholder="Your email address">
+                    </div>
+                    <div class="col-md-2">
+                        <button type="submit" class="btn btn-light btn-lg w-100">Subscribe</button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>
