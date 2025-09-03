@@ -96,6 +96,32 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="post-card card h-100">
+                            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1174&q=80" class="card-img-top" alt="Post Image">
+                            <div class="card-body">
+                                <span class="category-badge">Travel</span>
+                                <h5 class="card-title mt-2">10 Hidden Gems in Europe You Need to Visit</h5>
+                                <p class="card-text">Discover breathtaking locations off the beaten path that will make your European adventure unforgettable.</p>
+                            </div>
+                            <div class="card-footer bg-white border-0 pt-0">
+                                <small class="text-muted"><i class="bi bi-clock me-1"></i> 6 min read</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="post-card card h-100">
+                            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1153&q=80" class="card-img-top" alt="Post Image">
+                            <div class="card-body">
+                                <span class="category-badge">Health</span>
+                                <h5 class="card-title mt-2">Morning Routines of Highly Successful People</h5>
+                                <p class="card-text">Learn how starting your day with intention can dramatically improve your productivity and overall wellbeing.</p>
+                            </div>
+                            <div class="card-footer bg-white border-0 pt-0">
+                                <small class="text-muted"><i class="bi bi-clock me-1"></i> 5 min read</small>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Pagination -->
