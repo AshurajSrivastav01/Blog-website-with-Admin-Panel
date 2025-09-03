@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+# ------------------------------------ UI Routs for Redirection ------------------------------------
 // Frontend Routes
 Route::view('/', 'frontend.blog', ['Title' => 'Home - Modern Blog']);
 Route::view('/about', 'frontend.about', ['Title' => 'About - Modern Blog']);
@@ -20,7 +21,6 @@ Route::view('/contact', 'frontend.contact', ['Title' => 'Contact - Modern Blog']
 Route::view('/Categories', 'frontend.categories', ['Title' => 'Categories - Modern Blog']);
 
 // Admin Routes
-
 
 // Authontication Routes
 Route::view('/cb-user/login', 'auth.login', ['Title' => 'User Login - Modern Blog']);
@@ -30,4 +30,4 @@ Route::prefix('user')->group(function () {
     Route::view('/reset-password', 'auth.changePassword', ['Title' => 'Reset Password - Modern Blog']);
 });
 
-
+# -------------------------------------------- Backend Routs ------------------------------------------
