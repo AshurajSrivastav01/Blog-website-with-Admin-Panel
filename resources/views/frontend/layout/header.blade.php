@@ -16,6 +16,7 @@
     <link href="{{ asset('asset/css/about.css') }}" rel="stylesheet">
     <link href="{{ asset('asset/css/blog.css') }}" rel="stylesheet">
     <link href="{{ asset('asset/css/contact.css') }}" rel="stylesheet">
+    <link href="{{ asset('asset/css/categories.css') }}" rel="stylesheet">
 </head>
 <body>
 
@@ -32,7 +33,7 @@
                         <a class="nav-link active" href="{{ url('/') }}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ url('/') }}">Categories</a>
+                        <a class="nav-link" href="{{ url('/Categories') }}">Categories</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ url('/about') }}">About</a>
