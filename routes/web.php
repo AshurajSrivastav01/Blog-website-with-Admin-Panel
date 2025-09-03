@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'frontend.blog', ['Title' => 'Home - Modern Blog']);
 Route::view('/about', 'frontend.about', ['Title' => 'About - Modern Blog']);
-
+Route::view('/contact', 'frontend.contact', ['Title' => 'Contact - Modern Blog']);
