@@ -50,7 +50,7 @@
         </form>
 
         <div class="auth-footer">
-            <p><a href="#login" data-bs-toggle="pill">Back to login</a></p>
+            <p><a href="{{ url('/cb-user/login') }}">Back to login</a></p>
         </div>
     </div>
 </div>

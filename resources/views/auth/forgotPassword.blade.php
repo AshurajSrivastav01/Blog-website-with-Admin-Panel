@@ -28,7 +28,7 @@
         </form>
 
         <div class="auth-footer">
-            <p>Remember your password? <a href="#login" data-bs-toggle="pill">Back to login</a></p>
+            <p>Remember your password? <a href="{{ url('/cb-user/login') }}">Back to login</a></p>
         </div>
     </div>
 </div>

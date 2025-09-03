@@ -80,7 +80,7 @@
         </div>
 
         <div class="auth-footer">
-            <p>Already have an account? <a href="#login" data-bs-toggle="pill">Sign in</a></p>
+            <p>Already have an account? <a href="{{ url('/cb-user/login') }}">Sign in</a></p>
         </div>
     </div>
 </div>

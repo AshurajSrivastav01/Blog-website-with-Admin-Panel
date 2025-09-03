@@ -37,7 +37,7 @@
                         <input type="checkbox" class="form-check-input" id="remember-me">
                         <label class="form-check-label" for="remember-me">Remember me</label>
                     </div>
-                    <a href="#forgot-password" class="text-decoration-none" data-bs-toggle="pill">Forgot password?</a>
+                    <a href="{{ url('/cb-user/forgot-password') }}" class="text-decoration-none">Forgot password?</a>
                 </div>
 
                 <div class="mb-3">
@@ -62,7 +62,7 @@
             </div>
 
             <div class="auth-footer">
-                <p>Don't have an account? <a href="#register" data-bs-toggle="pill">Sign up</a></p>
+                <p>Don't have an account? <a href="{{ url('/user/register') }}">Sign up</a></p>
             </div>
         </div>
     </div>
