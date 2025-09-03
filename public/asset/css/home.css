@@ -159,7 +159,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Sidebar */
 .sidebar-widget {
-    background-color: var(--light-color);
+    background-color: white;
     border-radius: 12px;
     padding: 1.5rem;
     margin-bottom: 2rem;
