@@ -29,6 +29,6 @@ Route::prefix('user')->group(function () {
 });
 
 // Admin Routes
-
-
+Route::view('/dashboard', 'backend.dashboard', ['Title' => 'Dashboard - Modern Blog']);
+Route::view('/dashboard/all-post', 'backend.allPost', ['Title' => 'All Post - Modern Blog']);
 # -------------------------------------------- Backend Routs ------------------------------------------

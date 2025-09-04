@@ -268,4 +268,73 @@
         </div>
     </div>
 </div>
+
+<script>
+    // Sidebar toggle
+    document.getElementById('sidebar-toggle').addEventListener('click', function() {
+        document.getElementById('sidebar').classList.toggle('active');
+    });
+
+    // Traffic chart
+    const trafficCtx = document.getElementById('trafficChart').getContext('2d');
+    const trafficChart = new Chart(trafficCtx, {
+        type: 'line',
+        data: {
+            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug'],
+            datasets: [{
+                label: 'Page Views',
+                data: [12000, 19000, 15000, 18000, 22000, 21000, 24500, 24800],
+                borderColor: '#4361ee',
+                tension: 0.3,
+                fill: true,
+                backgroundColor: 'rgba(67, 97, 238, 0.05)'
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    display: false
+                }
+            },
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    grid: {
+                        drawBorder: false
+                    }
+                },
+                x: {
+                    grid: {
+                        display: false
+                    }
+                }
+            }
+        }
+    });
+
+    // Sample notification on page load
+    setTimeout(() => {
+        // Create a Bootstrap toast notification
+        const toast = document.createElement('div');
+        toast.className = 'toast align-items-center text-white bg-primary border-0 position-fixed bottom-0 end-0 m-3';
+        toast.setAttribute('role', 'alert');
+        toast.setAttribute('aria-live', 'assertive');
+        toast.setAttribute('aria-atomic', 'true');
+        toast.innerHTML = `
+            <div class="d-flex">
+                <div class="toast-body">
+                    <i class="bi bi-info-circle me-2"></i> Welcome to your Blog Admin Panel!
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        `;
+        document.body.appendChild(toast);
+
+        // Initialize and show the toast
+        const bsToast = new bootstrap.Toast(toast);
+        bsToast.show();
+    }, 1000);
+</script>
 @endsection
