@@ -21,7 +21,7 @@
     <!-- Sidebar -->
     <div id="sidebar">
         <div class="sidebar-brand">
-            <h2 class="text-center">Blog Admin</h2>
+            <h2 class="text-center" style="margin: 0px;">CodeBridgeIT</h2>
         </div>
         <div class="sidebar-menu">
             <ul>

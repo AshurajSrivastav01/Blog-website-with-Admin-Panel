@@ -239,38 +239,6 @@
         </div>
     </div>
         <script>
-        // Sidebar toggle
-        document.getElementById('sidebar-toggle').addEventListener('click', function() {
-            document.getElementById('sidebar').classList.toggle('active');
-        });
-
-        // Submenu toggle
-        document.querySelectorAll('.submenu-toggle').forEach(item => {
-            item.addEventListener('click', function(e) {
-                e.preventDefault();
-                const parent = this.parentElement;
-                const submenu = parent.querySelector('.submenu');
-                const arrow = this.querySelector('.dropdown-arrow');
-
-                // Close other open submenus
-                document.querySelectorAll('.submenu').forEach(menu => {
-                    if (menu !== submenu) {
-                        menu.classList.remove('active');
-                    }
-                });
-
-                document.querySelectorAll('.dropdown-arrow').forEach(arr => {
-                    if (arr !== arrow) {
-                        arr.classList.remove('rotated');
-                    }
-                });
-
-                // Toggle current submenu
-                submenu.classList.toggle('active');
-                arrow.classList.toggle('rotated');
-            });
-        });
-
         // Select all checkbox
         document.getElementById('selectAll').addEventListener('change', function() {
             const checkboxes = document.querySelectorAll('tbody .form-check-input');
