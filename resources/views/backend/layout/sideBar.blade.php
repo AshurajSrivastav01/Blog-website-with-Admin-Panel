@@ -60,7 +60,7 @@
                         <i class="bi bi-chevron-right dropdown-arrow"></i>
                     </a>
                     <div class="submenu">
-                        <a href="#">All Users</a>
+                        <a href="{{ url('/dashboard/all-user') }}">All Users</a>
                         <a href="#">Add New User</a>
                         <a href="#">User Roles</a>
                     </div>
