@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Admin Panel</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <div class="sidebar-brand">
+            <h2 class="text-center">Blog Admin</h2>
+        </div>
+        <div class="sidebar-menu">
+            <ul>
+                <li class="active">
+                    <a href="#">
+                        <span>
+                            <i class="bi bi-house-door"></i>
+                            Dashboard
+                        </span>
+                    </a>
+                </li>
+                <li class="has-submenu">
+                    <a href="#" class="submenu-toggle">
+                        <span>
+                            <i class="bi bi-file-text"></i>
+                            Posts
+                        </span>
+                        <i class="bi bi-chevron-right dropdown-arrow"></i>
+                    </a>
+                    <div class="submenu active">
+                        <a href="#" class="active">All Posts</a>
+                        <a href="#">Add New Post</a>
+                        <a href="#">Categories</a>
+                        <a href="#">Tags</a>
+                    </div>
+                </li>
+                <li class="has-submenu">
+                    <a href="#" class="submenu-toggle">
+                        <span>
+                            <i class="bi bi-people"></i>
+                            Users
+                        </span>
+                        <i class="bi bi-chevron-right dropdown-arrow"></i>
+                    </a>
+                    <div class="submenu">
+                        <a href="#">All Users</a>
+                        <a href="#">Add New User</a>
+                        <a href="#">User Roles</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <span>
+                            <i class="bi bi-chat-left-text"></i>
+                            Comments
+                        </span>
+                    </a>
+                </li>
+                <li class="has-submenu">
+                    <a href="#" class="submenu-toggle">
+                        <span>
+                            <i class="bi bi-bar-chart"></i>
+                            Analytics
+                        </span>
+                        <i class="bi bi-chevron-right dropdown-arrow"></i>
+                    </a>
+                    <div class="submenu">
+                        <a href="#">Traffic Overview</a>
+                        <a href="#">Popular Content</a>
+                        <a href="#">Referral Sources</a>
+                    </div>
+                </li>
+                <li class="has-submenu">
+                    <a href="#" class="submenu-toggle">
+                        <span>
+                            <i class="bi bi-gear"></i>
+                            Settings
+                        </span>
+                        <i class="bi bi-chevron-right dropdown-arrow"></i>
+                    </a>
+                    <div class="submenu">
+                        <a href="#">General Settings</a>
+                        <a href="#">Writing Settings</a>
+                        <a href="#">Reading Settings</a>
+                        <a href="#">Discussion Settings</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- Main Content -->
+    <div id="content">
