@@ -89,7 +89,7 @@
         </div>
 
         <!-- Filter Section -->
-        <div class="row mb-4">
+        {{-- <div class="row mb-4">
             <div class="col-12">
                 <div class="filter-section">
                     <div class="row">
@@ -124,7 +124,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
 
         <!-- Users Table -->
         <div class="row">
