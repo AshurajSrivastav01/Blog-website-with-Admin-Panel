@@ -61,8 +61,8 @@
                     </a>
                     <div class="submenu">
                         <a href="{{ url('/dashboard/all-user') }}">All Users</a>
-                        <a href="#">Add New User</a>
-                        <a href="#">User Roles</a>
+                        <a href="{{ url('/dashboard/add-user') }}">Add New User</a>
+                        <a href="{{ url('/dashboard/user-roles') }}">User Roles</a>
                     </div>
                 </li>
                 <li>

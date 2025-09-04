@@ -39,6 +39,8 @@ Route::prefix('dashboard')->group(function () {
 
     // User Management
     Route::view('/all-user', 'backend.user.allUser', ['Title' => 'All User - Modern Blog']);
+    Route::view('/add-user', 'backend.user.addUser', ['Title' => 'Add User - Modern Blog']);
+    Route::view('/user-roles', 'backend.user.userRoles', ['Title' => 'User Roles - Modern Blog']);
 });
 
 # -------------------------------------------- Backend Routs ------------------------------------------
