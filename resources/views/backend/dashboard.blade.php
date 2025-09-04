@@ -2,6 +2,14 @@
 @section('main-container')
     <!-- Dashboard Content -->
     <div class="container-fluid p-4">
+        <!-- Page Title -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h4 class="mb-0">Dashboard</h4>
+                </div>
+            </div>
+        </div>
         <!-- Stats Cards -->
         <div class="row mb-4">
             <div class="col-xl-3 col-md-6 mb-4">

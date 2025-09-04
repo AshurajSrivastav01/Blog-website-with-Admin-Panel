@@ -27,7 +27,7 @@
             <ul>
                 {{-- <li class="active"> --}}
                 <li class="active">
-                    <a href="#">
+                    <a href="{{ url('/dashboard') }}">
                         <span>
                             <i class="bi bi-house-door"></i>
                             Dashboard
