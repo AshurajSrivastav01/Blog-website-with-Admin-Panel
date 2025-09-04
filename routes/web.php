@@ -30,5 +30,11 @@ Route::prefix('user')->group(function () {
 
 // Admin Routes
 Route::view('/dashboard', 'backend.dashboard', ['Title' => 'Dashboard - Modern Blog']);
-Route::view('/dashboard/all-post', 'backend.allPost', ['Title' => 'All Post - Modern Blog']);
+Route::prefix('dashboard')->group(function () {
+    Route::view('/all-post', 'backend.post.allPost', ['Title' => 'All Post - Modern Blog']);
+    Route::view('/add-post', 'backend.post.addPost', ['Title' => 'Add Post - Modern Blog']);
+    Route::view('/categories', 'backend.post.categories', ['Title' => 'Add Post - Modern Blog']);
+    Route::view('/tags', 'backend.post.tags', ['Title' => 'Add Post - Modern Blog']);
+});
+
 # -------------------------------------------- Backend Routs ------------------------------------------

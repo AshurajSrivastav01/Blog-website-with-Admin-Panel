@@ -25,6 +25,7 @@
         </div>
         <div class="sidebar-menu">
             <ul>
+                {{-- <li class="active"> --}}
                 <li class="active">
                     <a href="#">
                         <span>
@@ -41,11 +42,13 @@
                         </span>
                         <i class="bi bi-chevron-right dropdown-arrow"></i>
                     </a>
-                    <div class="submenu active">
-                        <a href="#" class="active">All Posts</a>
-                        <a href="#">Add New Post</a>
-                        <a href="#">Categories</a>
-                        <a href="#">Tags</a>
+                    {{-- <div class="submenu active"> --}}
+                    <div class="submenu ">
+                        {{-- <a href="#" class="active">All Posts</a> --}}
+                        <a href="{{ url('/dashboard/all-post') }}" class="">All Posts</a>
+                        <a href="{{ url('/dashboard/add-post') }}">Add New Post</a>
+                        <a href="{{ url('/dashboard/categories') }}">Categories</a>
+                        <a href="{{ url('/dashboard/tags') }}">Tags</a>
                     </div>
                 </li>
                 <li class="has-submenu">
