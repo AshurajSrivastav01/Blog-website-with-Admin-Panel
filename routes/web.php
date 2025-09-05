@@ -47,8 +47,10 @@ Route::prefix('dashboard')->group(function () {
 
     // Profile Management
     Route::view('/profile', 'backend.profile.userProfile', ['Title' => 'User Profile - Modern Blog']);
+
 });
 
+Route::view('/comming-soon', 'backend.commingSoon', ['Title' => 'Comming Soon - Modern Blog']);
 Route::view('/not-found', 'backend.404', ['Title' => '404 Not Found - Modern Blog']);
 
 # -------------------------------------------- Backend Routs ------------------------------------------

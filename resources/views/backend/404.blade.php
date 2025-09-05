@@ -249,10 +249,10 @@
         <p class="error-message">The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
 
         <div class="error-actions">
-            <a href="{{ url('/not-found') }}" class="btn btn-primary">
+            <a href="{{ url('/dashboard') }}" class="btn btn-primary">
                 <i class="bi bi-house me-2"></i> Go to Homepage
             </a>
-            <a href="#" class="btn btn-outline-primary">
+            <a href="{{ url('/dashboard') }}" class="btn btn-outline-primary">
                 <i class="bi bi-arrow-left me-2"></i> Go Back
             </a>
         </div>
