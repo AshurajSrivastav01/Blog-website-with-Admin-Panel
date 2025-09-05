@@ -44,6 +44,9 @@ Route::prefix('dashboard')->group(function () {
 
     // Comments Management
     Route::view('/comments', 'backend.comments.comment', ['Title' => 'Comments - Modern Blog']);
+
+    // Profile Management
+    Route::view('/profile', 'backend.profile.userProfile', ['Title' => 'User Profile - Modern Blog']);
 });
 
 # -------------------------------------------- Backend Routs ------------------------------------------
