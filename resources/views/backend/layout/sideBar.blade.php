@@ -87,7 +87,7 @@
                         <a href="#">Referral Sources</a>
                     </div>
                 </li>
-                <li class="has-submenu">
+                {{-- <li class="has-submenu">
                     <a href="#" class="submenu-toggle">
                         <span>
                             <i class="bi bi-gear"></i>
@@ -101,7 +101,7 @@
                         <a href="#">Reading Settings</a>
                         <a href="#">Discussion Settings</a>
                     </div>
-                </li>
+                </li> --}}
             </ul>
         </div>
     </div>
