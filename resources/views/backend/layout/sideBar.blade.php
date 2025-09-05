@@ -66,7 +66,7 @@
                     </div>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="{{ url('/dashboard/comments') }}">
                         <span>
                             <i class="bi bi-chat-left-text"></i>
                             Comments
