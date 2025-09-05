@@ -50,7 +50,7 @@ Route::prefix('dashboard')->group(function () {
 
 });
 
-Route::view('/comming-soon', 'backend.commingSoon', ['Title' => 'Comming Soon - Modern Blog']);
+Route::view('/coming-soon', 'backend.comingSoon', ['Title' => 'Comming Soon - Modern Blog']);
 Route::view('/not-found', 'backend.404', ['Title' => '404 Not Found - Modern Blog']);
 
 # -------------------------------------------- Backend Routs ------------------------------------------
