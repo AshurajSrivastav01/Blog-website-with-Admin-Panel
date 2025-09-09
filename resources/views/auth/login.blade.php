@@ -13,6 +13,12 @@
                 <p class="text-muted">Sign in to your account</p>
             </div>
 
+            @if (session('messate'))
+                <div class="alert alert-success">
+                    {{ session('message') }}
+                </div>
+            @endif
+
             <form>
                 <div class="mb-3">
                     <label for="login-email" class="form-label">Email Address</label>

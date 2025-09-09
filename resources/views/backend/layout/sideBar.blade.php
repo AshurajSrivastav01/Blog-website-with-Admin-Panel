@@ -117,3 +117,8 @@
     </div>
     <!-- Main Content -->
     <div id="content">
+        @if (session('message'))
+            <div class="alert alert-success">
+                {{ session('messsage') }}
+            </div>
+        @endif
