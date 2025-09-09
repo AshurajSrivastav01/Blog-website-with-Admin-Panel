@@ -34,26 +34,41 @@
                         </div>
 
                         <div class="mb-4">
-                            <label for="postContent" class="form-label">Content <span class="text-danger">*</span></label>
-                            <div class="editor-toolbar">
-                                <div class="btn-group btn-group-sm" role="group">
-                                    <button type="button" class="btn btn-outline-secondary"><i class="bi bi-type-bold"></i></button>
-                                    <button type="button" class="btn btn-outline-secondary"><i class="bi bi-type-italic"></i></button>
-                                    <button type="button" class="btn btn-outline-secondary"><i class="bi bi-type-underline"></i></button>
-                                    <button type="button" class="btn btn-outline-secondary"><i class="bi bi-list-ul"></i></button>
-                                    <button type="button" class="btn btn-outline-secondary"><i class="bi bi-list-ol"></i></button>
-                                    <button type="button" class="btn btn-outline-secondary"><i class="bi bi-link"></i></button>
-                                    <button type="button" class="btn btn-outline-secondary"><i class="bi bi-image"></i></button>
-                                    <button type="button" class="btn btn-outline-secondary"><i class="bi bi-code-slash"></i></button>
-                                </div>
-                            </div>
-                            <textarea class="form-control" id="postContent" rows="12" placeholder="Write your post content here..." required></textarea>
+                            {{-- Rich Text Editor  --}}
+                            <textarea id="textarea" placeholder="write your content here..."></textarea>
+
+                            <!-- Place the following <script> and <textarea> tags your HTML's <body> -->
+                            <script>
+                            tinymce.init({
+                                selector: '#textarea',
+                                plugins: [
+                                // Core editing features
+                                'anchor', 'autolink', 'charmap', 'codesample', 'emoticons', 'link', 'lists', 'media', 'searchreplace', 'table', 'visualblocks', 'wordcount',
+                                // Your account includes a free trial of TinyMCE premium features
+                                // Try the most popular premium features until Sep 23, 2025:
+                                'checklist', 'mediaembed', 'casechange', 'formatpainter', 'pageembed', 'a11ychecker', 'tinymcespellchecker', 'permanentpen', 'powerpaste', 'advtable', 'advcode', 'advtemplate', 'ai', 'uploadcare', 'mentions', 'tinycomments', 'tableofcontents', 'footnotes', 'mergetags', 'autocorrect', 'typography', 'inlinecss', 'markdown','importword', 'exportword', 'exportpdf'
+                                ],
+                                toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link media table mergetags | addcomment showcomments | spellcheckdialog a11ycheck typography uploadcare | align lineheight | checklist numlist bullist indent outdent | emoticons charmap | removeformat',
+                                tinycomments_mode: 'embedded',
+                                tinycomments_author: 'Author name',
+                                mergetags_list: [
+                                { value: 'First.Name', title: 'First Name' },
+                                { value: 'Email', title: 'Email' },
+                                ],
+                                ai_request: (request, respondWith) => respondWith.string(() => Promise.reject('See docs to implement AI Assistant')),
+                                uploadcare_public_key: '495ff705eed0e2a0fbf8',
+                            });
+                            </script>
                         </div>
 
                         <div class="mb-4">
-                            <label for="postExcerpt" class="form-label">Excerpt</label>
-                            <textarea class="form-control" id="postExcerpt" rows="3" placeholder="Write a brief excerpt (optional)"></textarea>
-                            <div class="form-text">The excerpt is optional and can be used to summarize your post.</div>
+                            <label for="postTitle" class="form-label">Meta Title <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control form-control-lg" id="metaTitle" placeholder="Add meta title" required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="postTitle" class="form-label">Meta Description <span class="text-danger">*</span></label>
+                            <textarea class="form-control form-control-lg" id="metaDescription" placeholder="Add meta description" required></textarea>
                         </div>
                     </div>
                 </div>
