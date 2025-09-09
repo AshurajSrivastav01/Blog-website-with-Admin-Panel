@@ -1,0 +1,55 @@
+/* Tag styling */
+.tag {
+    display: inline-block;
+    padding: 0.35rem 0.65rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    background-color: #e9ecef;
+    color: #495057;
+    margin: 0.25rem;
+}
+
+.tag-primary {
+    background-color: rgba(67, 97, 238, 0.1);
+    color: var(--primary);
+}
+
+.tag-success {
+    background-color: rgba(76, 201, 240, 0.1);
+    color: var(--success);
+}
+
+.tag-warning {
+    background-color: rgba(247, 37, 133, 0.1);
+    color: var(--warning);
+}
+
+.tag-info {
+    background-color: rgba(73, 149, 239, 0.1);
+    color: var(--info);
+}
+
+/* Action buttons */
+.action-btn {
+    padding: 0.25rem 0.5rem;
+    margin: 0 0.15rem;
+}
+
+/* Tag cloud */
+.tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.tag-cloud .tag {
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.tag-cloud .tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

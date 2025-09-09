@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="{{ asset('asset/css/backend/dashboard.css') }}">
     <link rel="stylesheet" href="{{ asset('asset/css/backend/userRoles.css') }}">
     <link rel="stylesheet" href="{{ asset('asset/css/backend/allUser.css') }}">
+    <link rel="stylesheet" href="{{ asset('asset/css/backend/tags.css') }}">
 </head>
 <body>
     <!-- Sidebar -->
