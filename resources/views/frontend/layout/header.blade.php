@@ -13,10 +13,20 @@
 
     <!-- Custom CSS -->
     <link href="{{ asset('asset/css/home.css') }}" rel="stylesheet">
+    <link href="{{ asset('public/asset/css/home.css') }}" rel="stylesheet">
+
     <link href="{{ asset('asset/css/about.css') }}" rel="stylesheet">
+    <link href="{{ asset('public/asset/css/about.css') }}" rel="stylesheet">
+
     <link href="{{ asset('asset/css/blog.css') }}" rel="stylesheet">
+    <link href="{{ asset('public/asset/css/blog.css') }}" rel="stylesheet">
+
     <link href="{{ asset('asset/css/contact.css') }}" rel="stylesheet">
+    <link href="{{ asset('public/asset/css/contact.css') }}" rel="stylesheet">
+
     <link href="{{ asset('asset/css/categories.css') }}" rel="stylesheet">
+    <link href="{{ asset('public/asset/css/categories.css') }}" rel="stylesheet">
+
 </head>
 <body>
 
