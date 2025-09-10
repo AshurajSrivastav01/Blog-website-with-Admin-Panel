@@ -47,7 +47,7 @@
 
 
     <!-- Place the first <script> tag in your HTML's <head> -->
-    <script src="https://cdn.tiny.cloud/1/1xbr9ycqqbbo9hr719iyqzz90e8tee8e2phfv0ku4w8rwn5t/tinymce/8/tinymce.min.js" referrerpolicy="origin" crossorigin="anonymous"></script>
+    <script src="https://cdn.tiny.cloud/1/ci5ocodi2e6vje9bmxhgjkda8yx7k8ev91krdoe0m0uybt8o/tinymce/8/tinymce.min.js" referrerpolicy="origin" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Sidebar -->
