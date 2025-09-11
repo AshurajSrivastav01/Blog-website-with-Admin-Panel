@@ -213,10 +213,19 @@
     document.getElementById('addUserForm').addEventListener('submit', function(e) {
         e.preventDefault();
 
-        // Basic validation
+        // Collect values
+        const firstName = document.getElementById('firstName').value.trim();
+        const lastName = document.getElementById('lastName').value.trim();
+        const username = document.getElementById('username').value.trim();
+        const email = document.getElementById('email').value.trim();
         const password = document.getElementById('password').value;
         const confirmPassword = document.getElementById('confirmPassword').value;
+        const bio = document.getElementById('bio').value.trim();
+        const website = document.getElementById('website').value.trim();
+        const role = document.getElementById('role').value;
+        const sendNotification = document.getElementById('sendNotification').checked;
 
+        // Validation
         if (password !== confirmPassword) {
             alert('Passwords do not match!');
             return;
@@ -227,32 +236,83 @@
             return;
         }
 
-        // If validation passes, show success message
+        // 👉 Log form data to console
+        console.log({
+            firstName,
+            lastName,
+            username,
+            email,
+            password,           // ⚠️ Don’t log passwords in real projects
+            confirmPassword,    // ⚠️ Just for testing
+            bio,
+            website,
+            role,
+            sendNotification
+        });
+
+        fetch('/api/addUser', {
+            method: 'POST',
+            body: JSON.stringify({
+                firstName,
+                lastName,
+                username,
+                email,
+                password,
+                bio,
+                website,
+                role,
+                sendNotification
+            }),
+            headers: {
+                'Content-Type': 'application/json',
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+
+            if (data.status) {
+                // Alert Message Function Call
+                showAlert('User Created Successfully!', status);
+            } else {
+                showAlert('Faild to Create User!', status);
+            }
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+    });
+
+    function showAlert(message, status){
+        let bg_color = status ? 'bg-success' : 'bg-danger';
+
+        // Create toast element
         const toast = document.createElement('div');
-        toast.className = 'toast align-items-center text-white bg-success border-0 position-fixed bottom-0 end-0 m-3';
+        toast.className = `toast align-items-center text-white ${bg_color} border-0 position-fixed bottom-0 end-0 m-3`;
         toast.setAttribute('role', 'alert');
         toast.setAttribute('aria-live', 'assertive');
         toast.setAttribute('aria-atomic', 'true');
         toast.innerHTML = `
             <div class="d-flex">
                 <div class="toast-body">
-                    <i class="bi bi-check-circle me-2"></i> User added successfully!
+                    <i class="bi bi-check-circle me-2"></i> ${message}
                 </div>
                 <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
             </div>
         `;
         document.body.appendChild(toast);
 
-        // Initialize and show the toast
         const bsToast = new bootstrap.Toast(toast);
         bsToast.show();
 
         // Reset form after 2 seconds
         setTimeout(() => {
             document.getElementById('addUserForm').reset();
-            document.getElementById('avatarPreview').src = 'https://ui-avatars.com/api/?name=New+User&background=dee2e6&color=495057';
+            if (document.getElementById('avatarPreview')) {
+                document.getElementById('avatarPreview').src = 'https://ui-avatars.com/api/?name=New+User&background=dee2e6&color=495057';
+            }
         }, 2000);
-    });
+    }
 </script>
 
 @endsection
